@@ -6,29 +6,34 @@
     CGFloat progress;
 }
 
-- (instancetype)initWithCenter:(CGPoint)center radius:(CGFloat)radius lineWidth:(CGFloat)lineWidth outerStrokeColor:(UIColor *)outerStrokeColor innerStrokeColor:(UIColor *)innerStrokeColor; {
+- (instancetype)initWithCenter:(CGPoint)center radius:(CGFloat)radius lineWidth:(CGFloat)lineWidth outerStrokeColor:(UIColor *)outerStrokeColor innerStrokeColor:(UIColor *)innerStrokeColor {
     self = [super init];
     if (self) {
+        _radius = radius;
+        _lineWidth = lineWidth;
+        _outerStrokeColor = outerStrokeColor;
+        _innerStrokeColor = innerStrokeColor;
+
         // Set up the shape of the circle
         // Background circle
         backgroundCircle = [CAShapeLayer layer];
-        backgroundCircle.path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:-M_PI_2 endAngle:2*M_PI-M_PI_2 clockwise:YES].CGPath;
+        backgroundCircle.path = [UIBezierPath bezierPathWithArcCenter:center radius:_radius startAngle:-M_PI_2 endAngle:2*M_PI-M_PI_2 clockwise:YES].CGPath;
         backgroundCircle.fillColor = [UIColor clearColor].CGColor;
-        backgroundCircle.strokeColor = innerStrokeColor.CGColor;
-        backgroundCircle.lineWidth = lineWidth;
+        backgroundCircle.strokeColor = _innerStrokeColor.CGColor;
+        backgroundCircle.lineWidth = _lineWidth;
         backgroundCircle.lineCap = kCALineCapRound; // Make the ends of the line round
         [self.layer addSublayer:backgroundCircle];
-        
+
         // Progress circle
         progressCircle = [CAShapeLayer layer];
-        progressCircle.path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:-M_PI_2 endAngle:2*M_PI-M_PI_2 clockwise:YES].CGPath;
+        progressCircle.path = [UIBezierPath bezierPathWithArcCenter:center radius:_radius startAngle:-M_PI_2 endAngle:2*M_PI-M_PI_2 clockwise:YES].CGPath;
         progressCircle.fillColor = [UIColor clearColor].CGColor;
-        progressCircle.strokeColor = outerStrokeColor.CGColor;
-        progressCircle.lineWidth = lineWidth;
+        progressCircle.strokeColor = _outerStrokeColor.CGColor;
+        progressCircle.lineWidth = _lineWidth;
         progressCircle.lineCap = kCALineCapRound; // Make the ends of the line round
         progressCircle.strokeEnd = 0;
         [self.layer addSublayer:progressCircle];
-        
+
         progress = 0.0; // Initialize the progress to 0
     }
     return self;
