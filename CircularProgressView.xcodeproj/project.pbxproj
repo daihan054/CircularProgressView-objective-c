@@ -18,6 +18,7 @@
 		C7F2432E2A720D9700628F88 /* CircularProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2432D2A720D9700628F88 /* CircularProgressViewUITests.m */; };
 		C7F243302A720D9700628F88 /* CircularProgressViewUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2432F2A720D9700628F88 /* CircularProgressViewUITestsLaunchTests.m */; };
 		C7F2433E2A72163F00628F88 /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2433D2A72163F00628F88 /* CircularProgressView.m */; };
+		C7F243492A722D6C00628F88 /* ProgrammaticallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F243482A722D6C00628F88 /* ProgrammaticallyVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C7F2432F2A720D9700628F88 /* CircularProgressViewUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularProgressViewUITestsLaunchTests.m; sourceTree = "<group>"; };
 		C7F2433C2A72163F00628F88 /* CircularProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
 		C7F2433D2A72163F00628F88 /* CircularProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
+		C7F243472A722D6C00628F88 /* ProgrammaticallyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgrammaticallyVC.h; sourceTree = "<group>"; };
+		C7F243482A722D6C00628F88 /* ProgrammaticallyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgrammaticallyVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				C7F243192A720D9700628F88 /* main.m */,
 				C7F2433C2A72163F00628F88 /* CircularProgressView.h */,
 				C7F2433D2A72163F00628F88 /* CircularProgressView.m */,
+				C7F243472A722D6C00628F88 /* ProgrammaticallyVC.h */,
+				C7F243482A722D6C00628F88 /* ProgrammaticallyVC.m */,
 			);
 			path = CircularProgressView;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F243492A722D6C00628F88 /* ProgrammaticallyVC.m in Sources */,
 				C7F2430F2A720D9500628F88 /* ViewController.m in Sources */,
 				C7F243092A720D9500628F88 /* AppDelegate.m in Sources */,
 				C7F2431A2A720D9700628F88 /* main.m in Sources */,
