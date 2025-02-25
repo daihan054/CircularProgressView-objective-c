@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAD822252D6D847A00556B9C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2430B2A720D9500628F88 /* SceneDelegate.m */; };
 		C7F243092A720D9500628F88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F243082A720D9500628F88 /* AppDelegate.m */; };
-		C7F2430C2A720D9500628F88 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2430B2A720D9500628F88 /* SceneDelegate.m */; };
 		C7F2430F2A720D9500628F88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2430E2A720D9500628F88 /* ViewController.m */; };
 		C7F243122A720D9500628F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F243102A720D9500628F88 /* Main.storyboard */; };
 		C7F243142A720D9700628F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F243132A720D9700628F88 /* Assets.xcassets */; };
@@ -273,8 +273,8 @@
 			files = (
 				C7F2430F2A720D9500628F88 /* ViewController.m in Sources */,
 				C7F243092A720D9500628F88 /* AppDelegate.m in Sources */,
+				BAD822252D6D847A00556B9C /* SceneDelegate.m in Sources */,
 				C7F2431A2A720D9700628F88 /* main.m in Sources */,
-				C7F2430C2A720D9500628F88 /* SceneDelegate.m in Sources */,
 				C7F2433E2A72163F00628F88 /* CircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,9 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N66HCPTXFG;
+				DEVELOPMENT_TEAM = 56TKVDRMCC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CircularProgressView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -463,8 +464,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.revechatFlutterSdk2.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demonew.com4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,9 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N66HCPTXFG;
+				DEVELOPMENT_TEAM = 56TKVDRMCC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CircularProgressView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -490,8 +493,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.revechatFlutterSdk2.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demonew.com4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
